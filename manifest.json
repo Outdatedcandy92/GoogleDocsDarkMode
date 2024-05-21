@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Google Docs Dark Mode",
+    "version": "1.0",
+    "description": "A Google Extension Which Can Enable Dark Mode In Your Google Docs.",
+    "permissions": ["scripting", "tabs", "activeTab", "storage"],
+    "action": {
+      "default_icon": {
+        "16": "./img/icon16.png",
+        "48": "./img/icon48.png",
+        "128": "./img/icon128.png"
+      },
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "host_permissions": [
+      "http://*/*",
+      "https://*/*"
+    ]
+  }
